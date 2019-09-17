@@ -3,8 +3,12 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import { init } from './init'
+import ElementUI from 'element-ui'
+
+import '@/assets/style/index.scss'
 
 Vue.config.productionTip = false
+Vue.use(ElementUI)
 
 init().then(() => { initVue() })
 

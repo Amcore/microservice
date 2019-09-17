@@ -1,0 +1,42 @@
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+}
+p {
+  margin: 0;
+}
+
+// ele-element
+.el-tooltip__popper {
+  max-width: 600px;
+  box-shadow: 0px 2px 8px 0px rgba(74, 144, 226, 0.31);
+}
+
+.el-tooltip__popper.is-light {
+}
+
+.el-tooltip__popper.is-light {
+  border: 1px solid #fff !important;
+}
+
+.el-tooltip__popper.is-light[x-placement^=top] .popper__arrow {
+  border-top-color: #f7f7f7 !important;
+}
+.el-tooltip__popper.is-light[x-placement^=bottom] .popper__arrow {
+  border-bottom-color: #f7f7f7 !important;
+}
+
+body .el-table th.gutter {
+  display: table-cell !important;
+}
+
+body .el-table colgroup.gutter {
+  display: table-cell !important;
+}
+
+table {
+  width: 100% !important;
+}
