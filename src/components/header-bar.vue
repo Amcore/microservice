@@ -9,7 +9,7 @@
         }"
         v-for="app in appConfig"
         :key="app.path"
-        @click="$router.push(app.appRouter)">
+        @click="goRouter(app.appRouter)">
           {{ app.name }}
       </div>
     </div>
@@ -31,9 +31,13 @@ import {
 export default class Header extends Vue {
   @Provide() appConfig: any[] = [{
     path: '/',
-    name: 'Test',
-    appRouter: '/'
+    name: 'About',
+    appRouter: '/about'
   }]
+
+  goRouter(path: string) {
+    this.$router.push(path)
+  }
 }
 </script>
 
