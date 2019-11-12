@@ -42,11 +42,12 @@
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.40.2"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
-    "src/**/*.js": [
-      "eslint --fix --ext .js",
-      "prettier --write",
-      "git add"
-    ]
+    "*.js": "eslint --fix"
   }
 }
