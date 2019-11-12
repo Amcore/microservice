@@ -5,11 +5,11 @@
 </template>
 
 <script>
-  export default {
-    mounted() {
-      console.log("adfadf")
-    }
+export default {
+  mounted() {
+    console.log("adfadf")
   }
+}
 </script>
 
 <style>
