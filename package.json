@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "precommit": "lint-staged",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -40,5 +41,12 @@
     "typescript": "^3.4.3",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.40.2"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint --fix --ext .js",
+      "prettier --write",
+      "git add"
+    ]
   }
 }
