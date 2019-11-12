@@ -27,4 +27,3 @@ function initVue() {
 }
 
 console.log("sssss")
-console.log("sssss")
