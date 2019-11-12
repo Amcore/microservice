@@ -4,6 +4,14 @@
   </div>
 </template>
 
+<script>
+  export default {
+    mounted() {
+      console.log("adfadf")
+    }
+  }
+</script>
+
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

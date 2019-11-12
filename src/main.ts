@@ -25,11 +25,3 @@ function initVue() {
     render: h => h(App)
   }).$mount('#root')
 }
-
-console.log('1111')
-
-console.log('2222')
-
-function gogogog() {
-  console.log("123123123123")
-}
