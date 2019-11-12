@@ -25,3 +25,5 @@ function initVue() {
     render: h => h(App)
   }).$mount('#root')
 }
+
+console.log("some")
