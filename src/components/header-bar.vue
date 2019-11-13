@@ -26,14 +26,12 @@ import {
   Watch
 } from 'vue-property-decorator'
 
+import appConfig from '@/app.config.ts'
+
 @Component({
 })
 export default class Header extends Vue {
-  @Provide() appConfig: any[] = [{
-    path: '/',
-    name: 'About',
-    appRouter: '/about'
-  }]
+  @Provide() appConfig = appConfig
 
   goRouter(path: string) {
     this.$router.push(path)

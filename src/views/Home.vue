@@ -26,6 +26,7 @@
 import NoApp from '@/components/no-app.vue'
 import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
 import HeaderBar from '@/components/header-bar.vue'
+import appConfig from '@/app.config.ts'
 
 import {
   Component,
@@ -43,6 +44,6 @@ import {
   }
 })
 export default class Home extends Vue {
-  @Provide() appConfig: [] = []
+  @Provide() appConfig = appConfig
 }
 </script>

@@ -11,7 +11,7 @@ import {
  */
 function bootstrap() {
   return new Promise((resolve) => {
-    const bootstrapApp = appList.map((app) => registerApp(app))
+    const bootstrapApp = appList.map((app: any) => registerApp(app))
     Promise
       .all(bootstrapApp)
       .then(() => {
