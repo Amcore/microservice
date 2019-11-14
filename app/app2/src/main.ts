@@ -24,6 +24,7 @@ const vueLifecycles = singleSpaVue({
 })
 
 export const bootstrap = function (props: any) {
+  console.log(props.store)
   return vueLifecycles.bootstrap(props)
 }
 

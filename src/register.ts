@@ -3,6 +3,20 @@ import store from './store'
 import utils from './utils'
 
 /**
+ * app params
+ */
+interface AppConfigType {
+  name: string,
+  id: string,
+  path: string,
+  appRouter: string,
+  prefix: string
+  main: string,
+  js: [string],
+  base: boolean
+}
+
+/**
  * @dec 路由解析 {history}
  */
 export function pathPrefix(app: any): any {
@@ -24,7 +38,7 @@ export function pathPrefix(app: any): any {
 /**
  * @dec 加载应用js
  */
-function appLoader(params: any): any {
+function appLoader(params: AppConfigType): any {
   return new Promise((resolve, reject) => {
     try {
       resolve(window.System.import(params.main))
@@ -39,8 +53,9 @@ function appLoader(params: any): any {
  * @param  params [description]
  * @return        [description]
  */
-export async function registerApp(params: any) {
+export async function registerApp(params: AppConfigType) {
   for (let i = 0; i < params.js.length; i++) {
+    console.log(window.System.import(params.js[i]))
     await window.System.import(params.js[i])
   }
 

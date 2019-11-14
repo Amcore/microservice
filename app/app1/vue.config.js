@@ -14,14 +14,14 @@ module.exports = {
       /^@portal\/*/,
       /^lodash$/,
       /^single-spa$/,
-      /^rxjs\/?.*$/,
+      /^rxjs\/?.*$/
     ]
   },
   outputDir: path.resolve(__dirname, './app1'),
   publicPath: 'app/app1',
   devServer: {
     headers: {
-      "Access-Control-Allow-Origin": "*",
+      'Access-Control-Allow-Origin': '*'
     },
     port: 8821
   }
