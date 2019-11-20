@@ -40,3 +40,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 2. css
 
 ### 新老项目迁移问题
+
+### 自动化问题
